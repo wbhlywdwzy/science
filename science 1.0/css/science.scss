@@ -1,5 +1,5 @@
 @import 'css.css';
-@import 'mixin';
+@import 'mixin.scss';
 .br {
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -202,7 +202,7 @@
     background: #00305b;
     .tit {
         display: none;
-        width: 171px;
+        width: 170px;
         height: 50px;
         font-size: 42px;
         font-size: 4.2rem;
@@ -315,7 +315,7 @@
         margin: 0 auto;
         border-left: 2px solid #bdd9ef;
         .tit {
-            width: 171px;
+            width: 170px;
             height: 50px;
             font-size: 42px;
             font-size: 4.2rem;
@@ -543,34 +543,11 @@
             }
         }
         .pic3 {
-            width: 80px;
-            height: 25px;
+            width: 300px;
+            height: 35px;
             margin-top: 270px;
             margin-left: 140px;
             display: none;
-            .in {
-                width: 23px;
-                height: 23px;
-                float: left;
-                background: url("../images/xuebitu.png") no-repeat;
-                background-position: -170px 0;
-            }
-            .bird {
-                width: 23px;
-                height: 23px;
-                float: left;
-                margin-left: 5px;
-                background: url("../images/xuebitu.png") no-repeat;
-                background-position: -205px 0;
-            }
-            .g {
-                width: 23px;
-                height: 23px;
-                float: left;
-                margin-left: 5px;
-                background: url("../images/xuebitu.png") no-repeat;
-                background-position: -240px 0;
-            }
         }
     }
 }
@@ -599,7 +576,6 @@
         cursor: pointer;
     }
 }
-
 .label {
     width: 100%;
     height: 110px;
@@ -956,13 +932,13 @@
                 height: auto;
                 display: block;
                 margin-left: 20px;
-                margin-top: 30px;
+                margin-top: 20px;
                 .li2 {
-                    margin-top: 35px;
+                    margin-top: 30px;
                 }
             }
             .pic3 {
-                width: 25%;
+                width: 80%;
                 height: auto;
                 margin-top: 10px;
                 margin-left: 20px;
@@ -970,6 +946,33 @@
             }
         }
     }
+.back{
+    width: 50px;
+    height: 40px;
+    padding-top: 10px;
+    border-radius: 15px;
+    background: #00305b;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: none;
+        .iconsb {
+        width: 30px;
+        height: 30px;
+        margin: 8px auto;
+        background: url("../images/xuebitu.png") no-repeat;
+        background-position: -265px 0;
+        cursor: pointer;
+    }
+    .fontb{
+        display: none;
+    }
+
+}
     .label {
         width: 100%;
         height: auto;
