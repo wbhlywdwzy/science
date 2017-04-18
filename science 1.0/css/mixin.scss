@@ -1,0 +1,18 @@
+@mixin br1($val:20px) {
+    width: 50px;
+    height: 50px;
+    background: url("../images/xuebitu.png") no-repeat;
+    float: left;
+    margin-left: -25px;
+    margin-top: $val;
+    background-position: -57px 0;
+} //resource c1,c2,c3,c4
+@mixin br2($val:20px) {
+    width: 50px;
+    height: 50px;
+    background: url("../images/xuebitu.png") no-repeat;
+    float: left;
+    margin-left: -25px;
+    margin-top: $val;
+    background-position: -112px 0;
+} //resource hover
