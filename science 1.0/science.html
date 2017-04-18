@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/science.css">
     <link rel="stylesheet" href="font/iconfont.css">
-
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=GFhzCNnHeNoZmYBOcmOZ3ZZsmeWqeFv5"></script>
 </head>
 
 <body>
@@ -173,9 +173,14 @@
                 <li class="li2">江苏省南京市鼓楼区汉口路22号南京大学图书馆423室</br>
                     <b>Email:</b><a href="#">info@mysite.comb </a></br>
                     <b>Tel:</b>+86 25 5882 5877 / 5881 2129</li>
-                <li class="li3">Click Here to Find Us</br>
-                    <a href="http://www.smartlib.cn/"></a><u>http://www.smartlib.cn/</u></li>
+                <li class="li3">
+                    <input type="button" class="btn" value="点击我展示地图">
+                    </br>
+                    <a href="http://www.smartlib.cn/"></a>
+                    <u>http://www.smartlib.cn/</u>
+                </li>
             </ul>
+
             <div class="pic3">
                 <div class="bdsharebuttonbox">
                     <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
@@ -186,6 +191,10 @@
             </div>
         </div>
     </div>
+    <div class="map">
+        <div class="closed">X</div>
+        <div id="allmap"></div>
+    </div>
     <div class="back">
         <div class="iconsb"></div>
         <div class="fontb">BACK TO TOP</div>
@@ -195,7 +204,7 @@
             <span>© 2023 by 南京乐致安信息技术有限公司</span>
         </div>
     </div>
-    
+
 </body>
 
 </html>

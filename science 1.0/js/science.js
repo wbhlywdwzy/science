@@ -11,59 +11,42 @@ $(function() {
     $(".nav").on("click", function() {
         $(".menu").addClass("h");
     }); //click the  nav hide ;
-
+    function top(val) {
+        $("body").stop(true).animate({
+            "scrollTop": val
+        }, 1500);
+    }
     $(".iconsb,.fontb").on("click", function() {
-        $("body").stop(true).animate({
-            "scrollTop": 0
-        }, 1500);
-    })
-
-
-
-
-    //back to top
-
+            top(0)
+        });
+        //back to top
     $(".nav a").eq(0).on("click", function() {
-        $("body").stop(true).animate({
-            "scrollTop": 0
-        }, 1500);
+        top(0)
     })
     $(".nav a").eq(1).on("click", function() {
-        $("body").stop(true).animate({
-            "scrollTop": 550
-        }, 1500);
+        top(550)
     })
     $(".nav a").eq(2).on("click", function() {
-        $("body").stop(true).animate({
-            "scrollTop": 720
-        }, 1500);
+        top(720)
     })
     $(".nav a").eq(3).on("click", function() {
-        $("body").stop(true).animate({
-            "scrollTop": 800
-        }, 1500);
+        top(800)
     })
     $(".nav a").eq(4).on("click", function() {
-        $("body").stop(true).animate({
-            "scrollTop": 1320
-        }, 1500);
+        top(1320)
     })
     $(".nav a").eq(5).on("click", function() {
-        $("body").stop(true).animate({
-            "scrollTop": 2300
-        }, 1500);
+        top(2300)
     })
     $(".nav a").eq(6).on("click", function() {
-            $("body").stop(true).animate({
-                "scrollTop": 3500
-            }, 1500);
+        top(3500)
         }) //click the navs' a content ,the scroll to the relative article
 
     $(".deve").fadeIn(2000);
 
     $(window).scroll(function() {
             var w_t = $(window).scrollTop();
-        $(".menu").addClass("h");
+            $(".menu").addClass("h");
             if (w_t >= 350) {
                 $(".back").fadeIn();
             } else {
@@ -83,6 +66,20 @@ $(function() {
             }
         }) //content Fadein;
 })
+
+$(".btn").on("click", function() {
+    $(".map").fadeIn();
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(118.786511, 32.029147);
+    map.centerAndZoom(point, 15);
+    var marker = new BMap.Marker(point); // 创建标注
+    map.addOverlay(marker); // 将标注添加到地图中
+    marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+})
+$(".closed").on("click", function() {
+    $(".map").fadeOut();
+})
+
 window._bd_share_config = {
     "common": {
         "bdSnsKey": {},
